@@ -10,28 +10,28 @@ const Dashboard = () => {
       value: "142",
       change: "+12%",
       icon: Calendar,
-      trend: "up" as const
+      trend: "up"
     },
     {
       title: "Engagement Rate",
       value: "8.4%",
       change: "+2.1%",
       icon: TrendingUp,
-      trend: "up" as const
+      trend: "up"
     },
     {
       title: "Active Clients",
       value: "23",
       change: "+3",
       icon: Users,
-      trend: "up" as const
+      trend: "up"
     },
     {
       title: "Total Views",
       value: "45.2K",
       change: "+18%",
       icon: Eye,
-      trend: "up" as const
+      trend: "up"
     }
   ];
 
@@ -43,7 +43,7 @@ const Dashboard = () => {
       caption: "Exciting new product launch! 🚀 #Innovation #Tech",
       platforms: ["Instagram", "WhatsApp"],
       engagement: 1200,
-      status: "posted" as const
+      status: "posted"
     },
     {
       id: 2,
@@ -52,7 +52,7 @@ const Dashboard = () => {
       caption: "Transform your fitness journey with our new app! 💪",
       platforms: ["Instagram", "Telegram"],
       engagement: 892,
-      status: "posted" as const
+      status: "posted"
     },
     {
       id: 3,
@@ -61,7 +61,7 @@ const Dashboard = () => {
       caption: "Delicious recipes made simple. Join us! 🍽️",
       platforms: ["Instagram", "Email"],
       engagement: 645,
-      status: "scheduled" as const
+      status: "scheduled"
     }
   ];
 
