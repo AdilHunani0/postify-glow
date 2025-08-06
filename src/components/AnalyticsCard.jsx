@@ -1,15 +1,7 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { TrendingUp, TrendingDown } from "lucide-react";
 
-interface AnalyticsCardProps {
-  title: string;
-  value: string;
-  change: string;
-  icon: React.ComponentType<any>;
-  trend: "up" | "down";
-}
-
-const AnalyticsCard = ({ title, value, change, icon: Icon, trend }: AnalyticsCardProps) => {
+const AnalyticsCard = ({ title, value, change, icon: Icon, trend }) => {
   const isPositive = trend === "up";
   
   return (

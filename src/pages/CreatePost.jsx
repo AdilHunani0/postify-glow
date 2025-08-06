@@ -36,9 +36,9 @@ const CreatePost = () => {
     }, 3000);
   };
 
-  const handleImageUpload = (files: FileList | File) => {
+  const handleImageUpload = (files) => {
     const fileArray = files instanceof FileList ? Array.from(files) : [files];
-    const newImages = fileArray.map((file: File) => ({
+    const newImages = fileArray.map((file) => ({
       id: Date.now() + Math.random(),
       url: URL.createObjectURL(file),
       file

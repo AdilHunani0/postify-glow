@@ -2,13 +2,7 @@ import { useState } from "react";
 import { X, Download, Eye } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
-interface PreviewImageProps {
-  src: string;
-  alt: string;
-  onRemove?: () => void;
-}
-
-const PreviewImage = ({ src, alt, onRemove }: PreviewImageProps) => {
+const PreviewImage = ({ src, alt, onRemove }) => {
   const [isLoaded, setIsLoaded] = useState(false);
 
   return (

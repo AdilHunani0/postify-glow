@@ -3,19 +3,7 @@ import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Eye, Heart, Share, MessageCircle } from "lucide-react";
 
-interface PostCardProps {
-  post: {
-    id: number;
-    client: string;
-    image: string;
-    caption: string;
-    platforms: string[];
-    engagement: number;
-    status: "posted" | "scheduled" | "failed";
-  };
-}
-
-const PostCard = ({ post }: PostCardProps) => {
+const PostCard = ({ post }) => {
   const getStatusBadge = (status) => {
     const variants = {
       posted: "default",

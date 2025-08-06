@@ -3,14 +3,7 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Card, CardContent } from "@/components/ui/card";
 
-interface DateTimePickerProps {
-  date: Date;
-  time: string;
-  onDateChange: (date: Date | undefined) => void;
-  onTimeChange: (time: string) => void;
-}
-
-const DateTimePicker = ({ date, time, onDateChange, onTimeChange }: DateTimePickerProps) => {
+const DateTimePicker = ({ date, time, onDateChange, onTimeChange }) => {
   return (
     <div className="space-y-4">
       {/* Date Picker */}

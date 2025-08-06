@@ -3,12 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover";
 
-interface ColorPickerProps {
-  color: string;
-  onChange: (color: string) => void;
-}
-
-const ColorPicker = ({ color, onChange }: ColorPickerProps) => {
+const ColorPicker = ({ color, onChange }) => {
   const [isOpen, setIsOpen] = useState(false);
   
   const presetColors = [

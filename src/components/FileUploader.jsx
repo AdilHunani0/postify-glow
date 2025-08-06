@@ -2,13 +2,7 @@ import { useState, useRef } from "react";
 import { Upload, X, Image } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
-interface FileUploaderProps {
-  onFileSelect: (files: FileList | File) => void;
-  accept?: string;
-  multiple?: boolean;
-}
-
-const FileUploader = ({ onFileSelect, accept = "image/*", multiple = false }: FileUploaderProps) => {
+const FileUploader = ({ onFileSelect, accept = "image/*", multiple = false }) => {
   const [dragActive, setDragActive] = useState(false);
   const inputRef = useRef(null);
 

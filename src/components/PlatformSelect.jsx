@@ -2,12 +2,7 @@ import { useState } from "react";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent } from "@/components/ui/card";
 
-interface PlatformSelectProps {
-  selectedPlatforms: string[];
-  onChange: (platforms: string[]) => void;
-}
-
-const PlatformSelect = ({ selectedPlatforms, onChange }: PlatformSelectProps) => {
+const PlatformSelect = ({ selectedPlatforms, onChange }) => {
   const platforms = [
     {
       id: "instagram",
